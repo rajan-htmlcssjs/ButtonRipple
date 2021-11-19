@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: blueviolet;
+    border-width: 0;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn .circle {
+    position: absolute;;
+    height: 100px;
+    background-color: white;
+    width: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: ripple 0.5s ease-out forwards;
+}
+
+@keyframes ripple {
+    to{
+        transform: scale(3);
+        opacity: 0;
+    }
+}
